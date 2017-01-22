@@ -41,27 +41,17 @@
         android:layout_below="@+id/chrono"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
-        android:layout_above="@+id/progressBar2"
-        android:layout_marginTop="100dp" />
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:indeterminate="false"
-        android:max="10"
-        android:minHeight="50dp"
-        android:minWidth="300dp"
-        android:progress="0"
-        android:layout_above="@+id/button5"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/levelUpBar"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitCenter"
+        android:scaleX="0.8"
+        android:scaleY="0.8" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/catImageView"
+        android:layout_above="@+id/button5"
         android:layout_alignStart="@+id/button5"
         android:id="@+id/timerTextView" />
 

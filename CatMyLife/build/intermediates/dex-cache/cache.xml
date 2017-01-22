@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="ab72aeb4e2da7e366d19b0b1b112a55184ffe6cc">
+        sha1="34ce13194815f09895c6b03a579e2316e86f7fcf">
         <dex dex="E:\pennapp\CatMyLife\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f28eec9339dd50e2c35cc095cca9aad9a397c5f4\classes.dex" />
     </item>
     <item
@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="fd824ac779b1254c9ac79aaf0c9c654f806c1a7a">
+        sha1="6f11232bce1d8c0db34bb46b7353296be88f83a8">
         <dex dex="E:\pennapp\CatMyLife\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bd7bc5bb3dba00201a80e79acc14c14a3d4601c5\classes.dex" />
     </item>
     <item
