@@ -36,13 +36,14 @@ public class FocusPage extends AppCompatActivity {
             public void onChronometerTick(Chronometer arg0) {
                 countUp = (SystemClock.elapsedRealtime() - arg0.getBase()) / 1000;
                 String asText = (countUp / 60) + ":" + (countUp % 60);
-                cat.study_time++;
-                progressBar.setProgress(cat.study_time);
-                if (cat.study_time > cat.next_level){
-                    cat.level_up();
+                Cat.study_time++;
+                progressBar.setProgress(Cat.study_time);
+                if (Cat.study_time > Cat.next_level){
+                    Cat.level_up();
+                    Cat.study_time = 0;
                 }
                 timer.setText(asText);
-                title.setText(cat.title);
+                title.setText(Cat.title);
             }
         });
         stopWatch.start();
