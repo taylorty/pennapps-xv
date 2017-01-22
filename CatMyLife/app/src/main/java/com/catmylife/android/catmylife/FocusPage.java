@@ -15,8 +15,6 @@ import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import static android.content.Context.NOTIFICATION_SERVICE;
-
 public class FocusPage extends AppCompatActivity {
     TextView timer;
     long startTime;
@@ -58,8 +56,8 @@ public class FocusPage extends AppCompatActivity {
         stopWatch.stop();
         NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.common_plus_signin_btn_text_light_pressed) // notification icon
-                .setContentTitle("Notification!") // title for notification
-                .setContentText("Hello word") // message for notification
+                .setContentTitle("CatMyLife") // title for notification
+                .setContentText("Help your cat become smarter!") // message for notification
                 .setAutoCancel(false) // clear notification after click
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setPriority(Notification.PRIORITY_HIGH);

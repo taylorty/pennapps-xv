@@ -50,6 +50,7 @@ public class cat {
                 title = "buddha";
                 break;
         }
+        study_time = 0;
 
     }
 }
