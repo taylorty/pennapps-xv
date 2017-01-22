@@ -14,13 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name your cat"
         android:ems="10"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="102dp"
-        android:id="@+id/editText"
-        android:textAlignment="center" />
+        android:id="@+id/loginName"
+        android:textAlignment="center"
+        android:hint="Name your cat" />
 
     <Button
         android:text="Enter"

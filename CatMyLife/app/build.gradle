@@ -25,9 +25,10 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.google.android.gms:play-services-fitness:8.4.0'
+//    compile 'com.google.android.gms:play-services-fitness:8.4.0'
     compile "com.google.android.gms:play-services-fitness:${google_play_services_library}"
     compile "com.android.support:appcompat-v7:${google_support_library}"
     compile "com.android.support:design:${google_support_library}"
     testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-appindexing:9.2.0'
 }

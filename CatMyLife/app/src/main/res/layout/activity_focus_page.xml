@@ -10,22 +10,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.catmylife.android.catmylife.FocusPage">
 
+    <Chronometer android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrono"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:text="Study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/progressBar2"
+        android:layout_marginBottom="106dp"
+        android:id="@+id/button3" />
+
     <Button
         android:text="Give Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="83dp"
-        android:id="@+id/button5"
-        android:onClick="giveUp" />
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toEndOf="@+id/progressBar2"
+        android:id="@+id/button4" />
 
-    <TextView
-        android:text="TextView"
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:id="@+id/countDownTextView" />
+        android:id="@+id/progressBar2"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button8"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
