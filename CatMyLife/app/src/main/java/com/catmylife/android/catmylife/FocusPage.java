@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Chronometer;
 import android.widget.TextView;
 
+import static android.content.Context.NOTIFICATION_SERVICE;
+
 public class FocusPage extends AppCompatActivity {
     TextView timer;
     long startTime;

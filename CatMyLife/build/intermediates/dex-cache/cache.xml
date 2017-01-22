@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_5fa4015fb004271703b566c95a150d1dd741c004/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_f35e28cc87695535b89c1cb7031764cc93eb846d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_268351cc90a0f3526494a3e2034ae421574f0a17/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="811202a9098047576814fc2171b56b83b537a8b9">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.2.0_11028168ca8a66bb80b15aa4a4efac956480c0fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_6f144fea953ff19093b50ee8e6488367eed19fb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_cabf27dfb2f2c0e1d6f488a95763f2642083d428/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_14059906084ff948f1d1392af88d6565001247df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a2acb53009603c042c606d393eb1953a52335386">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ecdad5845a2e2c78467c7a5fb05a809d8e748eb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_1a4d8a24dd10e7bc290e2d1281dff391be12a0c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec2c5c724752299ff6df8181f4ca59eece148d61">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1f3dcf93345b6baa428bbfaa793e5357d2947a40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="593fbaec1c3e100480a2bd72457b64b7dde6ac2d">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.0_35e0162fbcfca3618eb987027109fb6c84e29131/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_6f32cea8f78130cd0553a10405808acaccd68379/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dd7676ac12aa6653718b7ea33d93ce9d6915d526">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.0_f3065a3aa08a5d3f8375db775699c50e0b364b25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="982031d2aa9652bc955d0b581ec70378c0adfc56">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.2.0_7a8c3134994d5011f6ca913a4c1269e0664cbd94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_1da1544cf757e693f29599126f586f3b26a694c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="30489a97b06cc3945bdbcc1770089af9e3b3b64d">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.0_be5e8fb79960723773468540c911b06533ad2955/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a03f4d605b0f29222c2ddf8b7896258cb4b92def">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.2.0_0ddb0eb13108272b3898b24386155fac81958d99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_17cc039e6896ac454a79a83a15c4909759b7bde5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9e93dcbab7eb2297da463f05643af1501848d370/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_d40c566eef7a5b8de2a83962b814bbc4fa01af36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_0d3031392b80a22a02cdb29387a152a32c103ded/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_71d1e2b6c7c40eb8766c22b1fa40aa82885868e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_9eef0464fde1c8e00c38abf728e4a8841007dd55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_4684731c3db915986386ecb3fe0b2e2d94a958a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_1fb9c270d466ca74117553d3967ebc63f7a95b6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="363f626ad5686283250cdb6073ae1bba5cb07a87">
+        <dex dex="/home/sarah/pennapps-xv/CatMyLife/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.2.0_d307347cf49c3149890eeeca662e27ac9a18d9bd/classes.dex" />
+    </item>
+
+</items>
