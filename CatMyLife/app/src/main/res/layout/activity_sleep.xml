@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -14,32 +15,50 @@
         android:indeterminate="false"
         android:max="10"
         android:minHeight="50dp"
-        android:minWidth="200dp"
+        android:minWidth="300dp"
         android:progress="0"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/normal_cat_animation"
+        android:id="@+id/imageView4"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/progressBar"
+        android:paddingTop="100dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wake Up"
-        android:id="@+id/button2"
-        android:layout_marginEnd="39dp"
+        android:id="@+id/button3"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="21dp"
+        android:textColor="#FFDDF0E9"
+        android:background="#FF69C4A4"
+        android:minHeight="0dp"
+        android:minWidth="65dp"
+        android:padding="9dp"
+        android:textSize="16sp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="95dp" />
+        android:layout_alignEnd="@+id/progressBar" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Sleeping"
         android:id="@+id/button"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="23dp" />
+        android:textColor="#FFDDF0E9"
+        android:background="#FF69C4A4"
+        android:minHeight="0dp"
+        android:minWidth="65dp"
+        android:padding="9dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toStartOf="@+id/button3" />
 
 </RelativeLayout>
