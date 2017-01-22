@@ -1,22 +1,15 @@
 package com.catmylife.android.catmylife;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.catmylife.android.catmylife.logger.Log;
-import com.catmylife.android.catmylife.logger.LogView;
-import com.catmylife.android.catmylife.logger.LogWrapper;
-import com.catmylife.android.catmylife.logger.MessageOnlyLogFilter;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.Scopes;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -50,8 +43,8 @@ public class MainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
         t = (TextView) findViewById(R.id.goldCoin);
-        TextView nameTV = (TextView) findViewById(R.id.nameTextView);
-        nameTV.setText("Hi, I am " + name + "!");
+//        TextView nameTV = (TextView) findViewById(R.id.nameTextView);
+//        nameTV.setText("Hi, I am " + name + "!");
         buildFitnessClient();
         readData();
         t.setText(Long.toString(stepCount));

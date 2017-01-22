@@ -9,7 +9,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.catmylife.android.catmylife.MainPage">
+    tools:context="com.catmylife.android.catmylife.MainPage"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/background">
 
     <Button
         android:text="SLeep"
