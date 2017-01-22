@@ -50,7 +50,7 @@ public class MainPage extends AppCompatActivity {
         buildFitnessClient();
         readData();
         t.setText(Long.toString(stepCount));
-        ImageView normalCat = (ImageView) findViewById(R.id.cat);
+        ImageView normalCat = (ImageView) findViewById(R.id.catImageView);
         AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
     }
 
