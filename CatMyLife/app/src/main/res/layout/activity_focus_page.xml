@@ -61,7 +61,7 @@
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button5"
+        android:layout_below="@+id/catImageView"
         android:layout_alignStart="@+id/button5"
         android:id="@+id/timerTextView" />
 

@@ -13,36 +13,6 @@
     android:animateLayoutChanges="true"
     android:background="@drawable/background">
 
-    <Button
-        android:text="Sleep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/goldCoin"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button7"
-        android:onClick="sleep" />
-
-    <Button
-        android:text="Study"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="57dp"
-        android:layout_marginBottom="99dp"
-        android:id="@+id/button3"
-        android:onClick="study" />
-
-    <Button
-        android:text="Buy Food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_toEndOf="@+id/button3"
-        android:layout_marginStart="47dp"
-        android:id="@+id/button4"
-        android:onClick="buyFood" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,20 +30,118 @@
         android:id="@+id/goldCoin" />
 
     <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/catImageView"
-        android:layout_toEndOf="@+id/button3"
-        android:layout_marginTop="30dp"
-        android:id="@+id/textView3" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/catImageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/normal_cat_animation"
+        android:id="@+id/cat"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:layout_above="@+id/progressBar7" />
+
+    <TextView
+        android:text="you and your cat healthy!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#D2DFD8"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:text="Collect coins by walking!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#D2DFD8"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp" />
+
+    <TextView
+        android:text="Walk 10000 steps a day to make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="#D2DFD8"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:onClick="study"
+        android:background="#FF69C4A4"
+        android:textColor="#FFDDF0E9"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toEndOf="@+id/coinTextView"
+        android:layout_marginStart="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="9dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="sleep"
+        android:background="#FF69C4A4"
+        android:textColor="#FFDDF0E9"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toEndOf="@+id/button7"
+        android:layout_marginLeft="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="9dp"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="10"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:progress="0"
+        android:layout_above="@+id/button7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/button3"
+        android:onClick="buyFood"
+        android:textColor="#FFDDF0E9"
+        android:background="#FF69C4A4"
+        android:minHeight="0dp"
+        android:minWidth="65dp"
+        android:padding="9dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView3" />
 
 </RelativeLayout>
