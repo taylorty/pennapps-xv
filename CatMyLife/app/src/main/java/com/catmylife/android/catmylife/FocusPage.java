@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 public class FocusPage extends AppCompatActivity {
     TextView timer;
+    TextView title;
     long startTime;
     long countUp;
     Chronometer stopWatch;
@@ -26,6 +27,7 @@ public class FocusPage extends AppCompatActivity {
         stopWatch = (Chronometer) findViewById(R.id.chrono);
         startTime = SystemClock.elapsedRealtime();
         timer = (TextView) findViewById(R.id.timerTextView);
+        title = (TextView) findViewById(R.id.title);
         stopWatch.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener(){
             public void onChronometerTick(Chronometer arg0) {
                 countUp = (SystemClock.elapsedRealtime() - arg0.getBase()) / 1000;
@@ -35,6 +37,7 @@ public class FocusPage extends AppCompatActivity {
                     cat.level_up();
                 }
                 timer.setText(asText);
+                title.setText(cat.title);
             }
         });
         stopWatch.start();
