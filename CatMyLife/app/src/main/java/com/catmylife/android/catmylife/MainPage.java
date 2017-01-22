@@ -1,12 +1,14 @@
 package com.catmylife.android.catmylife;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.catmylife.android.catmylife.logger.Log;
@@ -33,11 +35,13 @@ public class MainPage extends AppCompatActivity {
     private long stepCount = 0;
     private GoogleApiClient mClient = null;
     private String name = Login.getName();
-
+    ImageView normalCat;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +52,40 @@ public class MainPage extends AppCompatActivity {
 //        buildFitnessClient();
 //        readData();
 //        t.setText(Long.toString(stepCount));
-//        ImageView normalCat = (ImageView) findViewById(R.id.catImageView);
-//        AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
-//        normalCatAnimation.start();
+         normalCat = (ImageView) findViewById(R.id.catImageView);
+        AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+
+    private void switchToFatCat(){
+        normalCat.setImageResource(R.drawable.fat_cat_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+    private void switchToNormalCat(){
+        normalCat.setImageResource(R.drawable.normal_cat_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+    private void switchToThinCat(){
+        normalCat.setImageResource(R.drawable.thin_cat_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+    private void switchToSuperThinCat(){
+        normalCat.setImageResource(R.drawable.superthin_cat_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
     }
 
     /**

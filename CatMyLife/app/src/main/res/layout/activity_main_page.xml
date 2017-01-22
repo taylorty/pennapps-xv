@@ -13,6 +13,20 @@
     android:animateLayoutChanges="true"
     android:background="@drawable/background">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/normal_cat_animation"
+        android:id="@+id/catImageView"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

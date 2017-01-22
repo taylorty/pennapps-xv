@@ -49,38 +49,10 @@ public class FocusPage extends AppCompatActivity {
         normalCatAnimation.start();
     }
 
-    private void switchToFatCat(){
-        normalCat.setImageResource(R.drawable.fat_cat_animation);
-        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
-        normalCatAnimation.setCallback(normalCat);
-        normalCatAnimation.setVisible(true, true);
-        normalCatAnimation.start();
-    }
-    private void switchToNormalCat(){
-        normalCat.setImageResource(R.drawable.normal_cat_animation);
-        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
-        normalCatAnimation.setCallback(normalCat);
-        normalCatAnimation.setVisible(true, true);
-        normalCatAnimation.start();
-    }
-    private void switchToThinCat(){
-        normalCat.setImageResource(R.drawable.thin_cat_animation);
-        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
-        normalCatAnimation.setCallback(normalCat);
-        normalCatAnimation.setVisible(true, true);
-        normalCatAnimation.start();
-    }
-    private void switchToSuperThinCat(){
-        normalCat.setImageResource(R.drawable.superthin_cat_animation);
-        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
-        normalCatAnimation.setCallback(normalCat);
-        normalCatAnimation.setVisible(true, true);
-        normalCatAnimation.start();
-    }
     public void giveUp(View view) {
-//        Intent intent = new Intent(this, MainPage.class);
-//        startActivity(intent);
-        switchToFatCat();
+        Intent intent = new Intent(this, MainPage.class);
+        startActivity(intent);
+//        switchToFatCat();
     }
     @Override
     protected void onStop()

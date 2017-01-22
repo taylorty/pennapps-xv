@@ -17,7 +17,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         t = (EditText) findViewById(R.id.loginName);
-        ImageView normalCat = (ImageView) findViewById(R.id.cat);
+        ImageView normalCat = (ImageView) findViewById(R.id.catImageView);
         AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
         normalCatAnimation.setCallback(normalCat);
         normalCatAnimation.setVisible(true, true);
