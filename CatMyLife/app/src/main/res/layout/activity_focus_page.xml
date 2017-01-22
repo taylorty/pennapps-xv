@@ -12,12 +12,15 @@
     tools:context="com.catmylife.android.catmylife.FocusPage"
     android:background="@drawable/background">
 
+    <Chronometer android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrono"
+        android:visibility="gone"/>
+
     <Button
         android:text="Give Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button5"
         android:onClick="giveUp"
         android:background="#FF69C4A4"
@@ -26,43 +29,19 @@
         android:minWidth="0dp"
         android:padding="9dp"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
-
-    <Chronometer android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chrono"
-        android:visibility="gone"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/timerTextView"
         android:layout_above="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:id="@+id/timerTextView" />
-
-    <TextView
-        android:text="baby"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/timerTextView"
-        android:layout_marginTop="32dp"
-        android:id="@+id/title" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/normal_cat_animation"
-        android:id="@+id/catImageView"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:layout_alignBottom="@+id/button5"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="40dp" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFD2DFD8"
+        android:textSize="20sp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -74,8 +53,53 @@
         android:minHeight="50dp"
         android:minWidth="300dp"
         android:progress="0"
-        android:layout_above="@+id/button5"
-        android:layout_alignEnd="@+id/catImageView" />
+        android:layout_above="@+id/timerTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="NOT checking your Facebook feed!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title2"
+        android:textSize="18sp"
+        android:textColor="#FFD2DFD8"
+        android:layout_above="@+id/catImageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Your kitty wants you to study with her!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textColor="#FFD2DFD8"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/title2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/study_normal_animation"
+        android:id="@+id/catImageView"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignBottom="@+id/timerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:text="baby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textColor="#FFD2DFD8"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/title2"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

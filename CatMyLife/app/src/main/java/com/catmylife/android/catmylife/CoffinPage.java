@@ -13,7 +13,8 @@ public class CoffinPage extends AppCompatActivity {
         setContentView(R.layout.activity_coffin_page);
     }
     public void restartGame(View view) {
-        Intent intent = new Intent(this, MainPage.class);
+        Cat.reset();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

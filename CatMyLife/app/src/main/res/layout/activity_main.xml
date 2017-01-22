@@ -15,7 +15,7 @@
         android:text="You feel empty and lonely in the dark!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
+        android:id="@+id/textView4"
         android:textColor="#D2DFD8"
         android:textSize="18sp"
         android:layout_below="@+id/textView2"

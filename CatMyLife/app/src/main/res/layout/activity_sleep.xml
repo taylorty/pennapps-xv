@@ -20,15 +20,6 @@
         android:layout_above="@+id/button"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/normal_cat_animation"
-        android:id="@+id/imageView4"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/progressBar"
-        android:paddingTop="100dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,5 +51,14 @@
         android:layout_alignBaseline="@+id/button3"
         android:layout_alignBottom="@+id/button3"
         android:layout_toStartOf="@+id/button3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sleep_normal_animation"
+        android:id="@+id/catImageView"
+        android:paddingTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/progressBar" />
 
 </RelativeLayout>

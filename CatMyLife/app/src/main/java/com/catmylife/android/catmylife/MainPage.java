@@ -4,11 +4,12 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.Chronometer;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.catmylife.android.catmylife.logger.Log;
@@ -31,32 +32,79 @@ import java.util.concurrent.TimeUnit;
 public class MainPage extends AppCompatActivity {
     public static final String TAG = "Main";
     TextView t;
-    private long coin;
+    private long originalCoin = 500;
     private long stepCount = 0;
+    //private int feedCounter = 0;
     private GoogleApiClient mClient = null;
+    private long prevStepCount = 0;
+    Chronometer stopWatch;
+    long countUp;
     private String name = Login.getName();
     ImageView normalCat;
+    TextView title;
+    ProgressBar progressBar;
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
 
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
-//        t = (TextView) findViewById(R.id.goldCoin);
-//        TextView nameTV = (TextView) findViewById(R.id.nameTextView);
-//        nameTV.setText("Hi, I am " + name + "!");
-//        buildFitnessClient();
-//        readData();
-//        t.setText(Long.toString(stepCount));
-         normalCat = (ImageView) findViewById(R.id.catImageView);
+        t = (TextView) findViewById(R.id.coinTextView);
+        buildFitnessClient();
+        readData();
+        stopWatch = (Chronometer) findViewById(R.id.chrono);
+        t.setText(Long.toString(originalCoin));
+        title = (TextView) findViewById(R.id.title);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        stopWatch.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+            public void onChronometerTick(Chronometer arg0) {
+                countUp = (SystemClock.elapsedRealtime() - arg0.getBase()) / 1000;
+                progressBar.setProgress(Cat.feedCounter);
+                Cat.feedCounter -= 1;
+                readData();
+                title.setText(Cat.title);
+                if (Cat.feedCounter < 0) {
+                    Cat.feedCounter = 10;
+                    Cat.weight -= 1;
+                    if (Cat.weight == 0) {
+                        switchDie();
+                    } else if (Cat.weight == 1){
+                        switchToSuperThinCat();
+                    }
+                    else if (Cat.weight == 2){
+                        switchToThinCat();
+                    }
+                    else if (Cat.weight == 3){
+                        switchToNormalCat();
+                    }
+                    else if (Cat.weight == 4){
+                        switchToFatCat();
+                    }
+                }
+            }
+        });
+        stopWatch.start();
+        normalCat = (ImageView) findViewById(R.id.catImageView);
+        if (Cat.weight == 1){
+            switchToSuperThinCat();
+        }
+        else if (Cat.weight == 2){
+            switchToThinCat();
+        }
+        else if (Cat.weight == 3){
+            switchToNormalCat();
+        }
+        else if (Cat.weight == 4){
+            switchToFatCat();
+        }
         AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
         normalCatAnimation.setCallback(normalCat);
         normalCatAnimation.setVisible(true, true);
         normalCatAnimation.start();
+
     }
 
     private void switchToFatCat(){
@@ -87,6 +135,10 @@ public class MainPage extends AppCompatActivity {
         normalCatAnimation.setVisible(true, true);
         normalCatAnimation.start();
     }
+    public void switchDie() {
+        Intent intent = new Intent(this, CoffinPage.class);
+        startActivity(intent);
+    }
 
     /**
      * Build a {@link GoogleApiClient} to authenticate the user and allow the application
@@ -104,6 +156,7 @@ public class MainPage extends AppCompatActivity {
                 .addScope(new Scope(Scopes.FITNESS_ACTIVITY_READ_WRITE))
                 .addConnectionCallbacks(
                         new GoogleApiClient.ConnectionCallbacks() {
+
                             @Override
                             public void onConnected(Bundle bundle) {
                                 Log.i(TAG, "Connected!!!");
@@ -129,11 +182,6 @@ public class MainPage extends AppCompatActivity {
                     public void onConnectionFailed(ConnectionResult result) {
                         Log.w(TAG, "Google Play services connection failed. Cause: " +
                                 result.toString());
-//                        Snackbar.make(
-//                                ,
-//                                "Exception while connecting to Google Play services: " +
-//                                        result.getErrorMessage(),
-//                                Snackbar.LENGTH_INDEFINITE).show();
                     }
                 })
                 .build();
@@ -164,56 +212,46 @@ public class MainPage extends AppCompatActivity {
     }
 
     public void buyFood(View view) {
-//        t.setText(Long.toString(coin));
-//        t.setText(Long.toString(MainActivity.stepCount));
         readData();
-//        t.setText(Long.toString(stepCount));
-//        System.out.println(Long.toString(stepCount) + "in buyfood 2");
-//        System.out.println(Long.toString(MainActivity.stepCount) + " in buyfood");
+        if (originalCoin < 100) {
+            return;
+        }
+        originalCoin -= 100;
+        t.setText(Long.toString(originalCoin));
+        Cat.feed();
+        if (Cat.weight == 0) {
+            switchDie();
+        } else if (Cat.weight == 1){
+            switchToSuperThinCat();
+        }
+        else if (Cat.weight == 2){
+            switchToThinCat();
+        }
+        else if (Cat.weight == 3){
+            switchToNormalCat();
+        }
+        else if (Cat.weight == 4){
+            switchToFatCat();
+        }
     }
 
     public void study(View view) {
-//        ImageView normalCat = (ImageView) findViewById(R.id.catImageView);
-//        AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
-//        normalCatAnimation.setCallback(normalCat);
-//        normalCatAnimation.setVisible(true, true);
-//        normalCatAnimation.start();
         Intent intent = new Intent(this, FocusPage.class);
         startActivity(intent);
+        stopWatch.stop();
     }
 
     public void readData() {
         new VerifyDataTask().execute();
-        t.setText(Long.toString(stepCount));
+        t.setText(Long.toString(originalCoin));
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the main; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_read_data) {
-            readData();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
 
     public void sleep(View view) {
-        //        ImageView normalCat = (ImageView) findViewById(R.id.catImageView);
-//        AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
-//        normalCatAnimation.setCallback(normalCat);
-//        normalCatAnimation.setVisible(true, true);
-//        normalCatAnimation.start();
         Intent intent = new Intent(this, SleepPage.class);
         startActivity(intent);
+        stopWatch.stop();
     }
+
 
     /**
      * Read the current daily step total, computed from midnight of the current day
@@ -231,11 +269,14 @@ public class MainPage extends AppCompatActivity {
                 total = totalSet.isEmpty()
                         ? 0
                         : totalSet.getDataPoints().get(0).getValue(Field.FIELD_STEPS).asInt();
+                prevStepCount = stepCount;
                 stepCount = total;
-//                System.out.println("step count +" + stepCount);
+                originalCoin += stepCount - prevStepCount;
+
             } else {
                 Log.w(TAG, "There was a problem getting the step count.");
             }
+
             Log.i(TAG, "Total steps: " + total);
             return null;
         }

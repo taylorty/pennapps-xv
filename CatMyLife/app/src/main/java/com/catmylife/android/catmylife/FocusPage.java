@@ -48,6 +48,18 @@ public class FocusPage extends AppCompatActivity {
         });
         stopWatch.start();
         normalCat = (ImageView) findViewById(R.id.catImageView);
+         if (Cat.weight == 1){
+            switchToSuperThinCat();
+        }
+        else if (Cat.weight == 2){
+            switchToThinCat();
+        }
+        else if (Cat.weight == 3){
+            switchToNormalCat();
+        }
+        else if (Cat.weight == 4){
+            switchToFatCat();
+        }
         AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
         normalCatAnimation.setCallback(normalCat);
         normalCatAnimation.setVisible(true, true);
@@ -58,6 +70,35 @@ public class FocusPage extends AppCompatActivity {
         Intent intent = new Intent(this, MainPage.class);
         startActivity(intent);
 //        switchToFatCat();
+    }
+
+    private void switchToFatCat(){
+        normalCat.setImageResource(R.drawable.study_fat_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+    private void switchToNormalCat(){
+        normalCat.setImageResource(R.drawable.study_normal_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+    private void switchToThinCat(){
+        normalCat.setImageResource(R.drawable.study_thin_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
+    }
+    private void switchToSuperThinCat(){
+        normalCat.setImageResource(R.drawable.study_super_thin_animation);
+        AnimationDrawable normalCatAnimation =  (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
     }
     @Override
     protected void onStop()
