@@ -28,6 +28,10 @@ public class FocusPage extends AppCompatActivity {
             public void onChronometerTick(Chronometer arg0) {
                 countUp = (SystemClock.elapsedRealtime() - arg0.getBase()) / 1000;
                 String asText = (countUp / 60) + ":" + (countUp % 60);
+                cat.study_time++;
+                if (cat.study_time > cat.next_level){
+                    cat.level_up();
+                }
                 timer.setText(asText);
             }
         });
@@ -59,8 +63,6 @@ public class FocusPage extends AppCompatActivity {
                 (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 // Builds the notification and issues it.
         mNotifyMgr.notify(mNotificationId, mBuilder.build());
-
-
     }
 
 }

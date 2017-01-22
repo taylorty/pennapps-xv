@@ -176,7 +176,6 @@ public class MainPage extends AppCompatActivity {
 //        normalCatAnimation.start();
         Intent intent = new Intent(this, SleepPage.class);
         startActivity(intent);
-
     }
 
     /**
@@ -206,6 +205,4 @@ public class MainPage extends AppCompatActivity {
             return null;
         }
     }
-
-
 }
