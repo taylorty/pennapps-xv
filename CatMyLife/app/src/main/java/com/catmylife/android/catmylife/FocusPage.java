@@ -4,6 +4,7 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Chronometer;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
@@ -38,6 +40,11 @@ public class FocusPage extends AppCompatActivity {
             }
         });
         stopWatch.start();
+        ImageView normalCat = (ImageView) findViewById(R.id.catImageView);
+        AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
+        normalCatAnimation.setCallback(normalCat);
+        normalCatAnimation.setVisible(true, true);
+        normalCatAnimation.start();
     }
     public void giveUp(View view) {
         Intent intent = new Intent(this, MainPage.class);
