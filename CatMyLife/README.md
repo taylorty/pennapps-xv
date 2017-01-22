@@ -6,7 +6,7 @@ CatMyLife is an efficiency app made for Android Platforms (Android Lolipop 5.0+)
 An app that makes you to keep an active lifestyle, be productive in your study and work and maintain a healthy sleep schedule with the fun company of a cute cat.
 
 ## Why?
-Cat is a creature that everyone loves. We all need a little extra motive to put the phone down to exercise, study and give proper rest. What's more inspiriting than taking care of your little kitty and keep her fit, smart and vibrant!
+Cat is a creature that everyone loves. We all need a little extra motive to put the phone down to exercise, study and get proper rest. What's more inspiriting than taking care of your little kitty and keep her fit, smart and vibrant!
 
 ## How?
 You will be able to adopt a cat and customize a lovely name for her when you first open the app. 
