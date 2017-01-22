@@ -29,15 +29,6 @@
         android:textColorHint="#FFFFFFFF"
         android:textColorLink="#FFFFFFFF" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/normal_cat_animation"
-        android:id="@+id/imageView2"
-        android:layout_above="@+id/loginName"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="100dp" />
-
     <Button
         android:text="NEXT"
         android:layout_width="wrap_content"
@@ -73,4 +64,15 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/loginName"
         android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/normal_cat_animation"
+        android:layout_marginTop="70dp"
+        android:id="@+id/cat"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
 </RelativeLayout>
