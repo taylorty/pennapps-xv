@@ -13,7 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.catmylife.android.catmylife.logger.Log;
-import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.Scopes;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -177,16 +176,8 @@ public class MainPage extends AppCompatActivity {
                             }
                         }
                 )
-                .enableAutoManage(this, 0, new GoogleApiClient.OnConnectionFailedListener() {
-                    @Override
-                    public void onConnectionFailed(ConnectionResult result) {
-                        Log.w(TAG, "Google Play services connection failed. Cause: " +
-                                result.toString());
-                    }
-                })
                 .build();
     }
-
     /**
      * Record step data by requesting a subscription to background step data.
      */
@@ -252,16 +243,13 @@ public class MainPage extends AppCompatActivity {
         stopWatch.stop();
     }
 
-
     /**
      * Read the current daily step total, computed from midnight of the current day
      * on the device's current timezone.
      */
     public class VerifyDataTask extends AsyncTask<Void, Void, Void> {
         protected Void doInBackground(Void... params) {
-
             long total = 0;
-
             PendingResult<DailyTotalResult> result = Fitness.HistoryApi.readDailyTotal(mClient, DataType.TYPE_STEP_COUNT_DELTA);
             DailyTotalResult totalResult = result.await(5, TimeUnit.SECONDS);
             if (totalResult.getStatus().isSuccess()) {
@@ -271,12 +259,11 @@ public class MainPage extends AppCompatActivity {
                         : totalSet.getDataPoints().get(0).getValue(Field.FIELD_STEPS).asInt();
                 prevStepCount = stepCount;
                 stepCount = total;
-                originalCoin += stepCount - prevStepCount;
+                originalCoin += (stepCount - prevStepCount)*20;
 
             } else {
                 Log.w(TAG, "There was a problem getting the step count.");
             }
-
             Log.i(TAG, "Total steps: " + total);
             return null;
         }
