@@ -8,15 +8,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background2"
     tools:context="com.catmylife.android.catmylife.MainActivity">
 
-    <Button
-        android:text="Adopt a Cat"
+    <TextView
+        android:text="You feel empty and lonely in the dark!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/textView3"
+        android:textColorLink="@color/OutsideTextColor"
+        android:textColor="#D2DFD8"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="136dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:text="Your life is meaningless."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColorLink="@color/OutsideTextColor"
+        android:textColor="#D2DFD8"
+        android:textSize="18sp"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Adopt a Cat Now!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:id="@+id/adoptBtn"
-        android:onClick="adoptCat" />
+        android:onClick="adoptCat"
+        android:textColor="#FFDDF0E9"
+        android:background="#FF69C4A4"
+        android:minHeight="0dp"
+        android:minWidth="65dp"
+        android:padding="9dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

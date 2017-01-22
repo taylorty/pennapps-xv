@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_focus_page"
     android:layout_width="match_parent"
@@ -17,23 +18,44 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="83dp"
         android:id="@+id/button5"
-        android:onClick="giveUp" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:id="@+id/timerTextView" />
+        android:onClick="giveUp"
+        android:background="#FF69C4A4"
+        android:textColor="#FFDDF0E9"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="9dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
 
     <Chronometer android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chrono"
         android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/normal_cat_animation"
+        android:id="@+id/catImageView"
+        android:layout_below="@+id/chrono"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_above="@+id/progressBar2"
+        android:layout_marginTop="100dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="10"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:progress="0"
+        android:layout_above="@+id/button5"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

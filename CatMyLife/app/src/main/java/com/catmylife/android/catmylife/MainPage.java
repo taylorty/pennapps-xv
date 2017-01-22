@@ -1,12 +1,14 @@
 package com.catmylife.android.catmylife;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.catmylife.android.catmylife.logger.Log;
@@ -48,6 +50,8 @@ public class MainPage extends AppCompatActivity {
         buildFitnessClient();
         readData();
         t.setText(Long.toString(stepCount));
+        ImageView normalCat = (ImageView) findViewById(R.id.cat);
+        AnimationDrawable normalCatAnimation =    (AnimationDrawable)normalCat.getDrawable();
     }
 
     /**
@@ -66,7 +70,6 @@ public class MainPage extends AppCompatActivity {
                 .addScope(new Scope(Scopes.FITNESS_ACTIVITY_READ_WRITE))
                 .addConnectionCallbacks(
                         new GoogleApiClient.ConnectionCallbacks() {
-
                             @Override
                             public void onConnected(Bundle bundle) {
                                 Log.i(TAG, "Connected!!!");
@@ -197,11 +200,9 @@ public class MainPage extends AppCompatActivity {
                         : totalSet.getDataPoints().get(0).getValue(Field.FIELD_STEPS).asInt();
                 stepCount = total;
 //                System.out.println("step count +" + stepCount);
-
             } else {
                 Log.w(TAG, "There was a problem getting the step count.");
             }
-
             Log.i(TAG, "Total steps: " + total);
             return null;
         }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_coffin_page"
     android:layout_width="match_parent"
@@ -8,15 +9,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.catmylife.android.catmylife.CoffinPage">
+    tools:context="com.catmylife.android.catmylife.CoffinPage"
+    android:background="@drawable/background2">
 
     <Button
-        android:text="Revive"
+        android:text="Revive for $5.00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:onClick="restartGame"
+        android:background="#FF69C4A4"
+        android:textColor="#FFDDF0E9"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="9dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="61dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="73dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Give me a new cat!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/button6"
-        android:onClick="restartGame" />
+        android:onClick="restartGame"
+        android:background="#FF69C4A4"
+        android:textColor="#FFDDF0E9"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="9dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/skeleton"
+        android:id="@+id/imageView"
+        android:padding="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
 </RelativeLayout>

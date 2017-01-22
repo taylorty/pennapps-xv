@@ -19,7 +19,7 @@ public class SleepPage extends AppCompatActivity {
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         start_timer = (Button) findViewById(R.id.button);
-        stop_timer = (Button) findViewById(R.id.button2);
+        stop_timer = (Button) findViewById(R.id.button3);
 
         start_timer.setOnClickListener(new View.OnClickListener() {
             @Override
