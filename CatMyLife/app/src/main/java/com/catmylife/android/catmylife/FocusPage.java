@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Chronometer;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class FocusPage extends AppCompatActivity {
@@ -22,6 +23,7 @@ public class FocusPage extends AppCompatActivity {
     long countUp;
     Chronometer stopWatch;
     ImageView normalCat;
+    ProgressBar progressBar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_focus_page);
@@ -29,11 +31,13 @@ public class FocusPage extends AppCompatActivity {
         startTime = SystemClock.elapsedRealtime();
         timer = (TextView) findViewById(R.id.timerTextView);
         title = (TextView) findViewById(R.id.title);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
         stopWatch.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener(){
             public void onChronometerTick(Chronometer arg0) {
                 countUp = (SystemClock.elapsedRealtime() - arg0.getBase()) / 1000;
                 String asText = (countUp / 60) + ":" + (countUp % 60);
                 cat.study_time++;
+                progressBar.setProgress(cat.study_time);
                 if (cat.study_time > cat.next_level){
                     cat.level_up();
                 }

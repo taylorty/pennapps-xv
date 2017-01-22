@@ -13,22 +13,6 @@
     android:background="@drawable/background2">
 
     <Button
-        android:text="Revive for $5.00"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button7"
-        android:onClick="restartGame"
-        android:background="#FF69C4A4"
-        android:textColor="#FFDDF0E9"
-        android:minHeight="0dp"
-        android:minWidth="0dp"
-        android:padding="9dp"
-        android:textSize="16sp"
-        android:layout_marginBottom="61dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
         android:text="Give me a new cat!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

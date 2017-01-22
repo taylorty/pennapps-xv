@@ -9,7 +9,7 @@ public class cat {
     static int study_time = 0;
     static String name;
     static int min_sleep_time = 60;
-    static int next_level = 6;
+    static int next_level = 5;
     private static int level = 0;
     static String title = "baby";
 
